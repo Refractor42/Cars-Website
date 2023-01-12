@@ -1,0 +1,157 @@
+body {
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
+  padding: 0;
+}
+
+.Cars {
+  padding-top: 40px;
+}
+
+h1, h2 {
+  text-align: center;
+  padding-top:40px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background-color: #f2f2f2;
+  margin: 10px;
+  padding: 10px;
+}
+#tesla-model-s-img, #bmw-m3-img, #ford-mustang-img, #audi-etron-img, #chevrolet-bolt-img, #porsche-taycan-img {
+  width:150px;
+  height:auto;
+  border:none;
+  transition: all 0.4s;
+}
+
+#tesla-model-s-img:hover, #bmw-m3-img:hover, #ford-mustang-img:hover, #audi-etron-img:hover, #chevrolet-bolt-img:hover, #porsche-taycan-img:hover{
+   opacity:0.7;
+}
+.car-info {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+
+}
+.car-info img{
+margin-right: 20px;
+}
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  position: fixed; /*keep the top bar in place */
+  top: 0; /* Position the top bar to the top of the screen*/
+  left: 0; /* Position the top bar to the left of the screen */
+  right: 0; /* Position the top bar to the right of the screen */
+  z-index:1; /* Make sure the top bar is on top of other elements */
+  
+}
+
+.menu li {
+  flex: 1;
+  color: white;
+  text-align: center;
+  padding: 0px 0px; /* decrease the padding on the top and bottom */
+  text-decoration: none;
+  background-color: rgb(39, 39, 39);
+  margin:0;
+}
+
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: rgb(44, 44, 44);
+  margin:0; /* remove any margin */
+  transition: background-color 0.25s ease-in-out;
+}
+.menu li a:hover {
+  background-color: #111; /*change background color when hover*/
+}
+@keyframes particle-effect {
+  from {
+    box-shadow: 0 0 0 0 #646464;
+  }
+  to {
+    box-shadow: 0 0 0 40px #666666;
+  }
+  
+}
+.particle-background {
+    animation: particle-effect 3s alternate-reverse infinite;
+    display:flex;
+    align-items: center;
+}
+.wheel {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.1; /* set the opacity to 50% */
+  pointer-events: none; /* ignore mouse events */
+  transition: transform 30s linear; /* set a smooth transition */
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  
+}
+form {
+  margin: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+label, input, textarea {
+  font-size: 14px;
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+label {
+  font-weight: 600;
+  text-align: left;
+  width: 20%;
+}
+
+input[type="submit"] {
+  background-color: #555;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+input[type="submit"]:hover {
+  background-color: #111;
+  color: #fff;
+}
